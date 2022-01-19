@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+html {
+    background-image: url("images/bg-intro-desktop.png");
+    background-size: cover;
+    background-color: hsl(0, 100%, 71%);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 2em;
+}
+
+.text-field {
+    width: 60%;
+}
+
+.input-field .form{
+    background: white;
+    color: black;
+    padding: 1rem;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.input-field .form input{
+    font-size: .8rem;
+    padding: .25rem;
+    color: black;
+    width: 100%;
+    display: block;
+    margin: .5rem 0;
+    border: none;
+    outline: hsl(246, 25%, 77%) 1px solid;
+    border-radius: 2px;
+}
+
+.input-field .form input:focus {
+    outline: hsl(248, 32%, 49%) 1px solid;
+    border: none
+}
+
+/* .input-field .form input:required {
+    outline: hsl(49, 53%, 48%) 1px solid;
+    border: none
+} */
+
+.invalid {
+    outline-color: red;
+    background: lightsalmon;
+/*  background: url("https://assets.digitalocean.com/labs/icons/exclamation-triangle-fill.svg") no-repeat 95% 50% lightsalmon;*/
+} 
+
+.input-field .form p{
+    color: black;
+    font-size: .6rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.input-field .form p span{
+    color: hsl(0, 100%, 71%);
+}
+
+
+
+.button {
+    width: 100%;
+    border: none;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+#free-btn{
+    background-color: hsl(248, 32%, 49%);
+    margin-bottom: 1rem;
+}
+
+#free-btn:hover{
+    background-color: hsl(248, 33%, 41%);
+}
+
+
+#submit-btn{
+    color: white;
+    background-color: hsl(154, 59%, 51%);
+    margin-bottom: 1rem;
+    border-radius: 3px;
+}
+
+#submit-btn:hover{
+    background-color: hsl(154, 42%, 42%);
+}
+
+@media only screen and (min-width: 400px) { 
+    body {
+        margin: 2rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    html {
+        background-image: url("images/bg-intro-mobile.png");
+    } 
+
+    body {
+        flex-direction: column;
+    }
+
+    .text-field {
+        padding: 1rem;
+        width: 100%;
+    }
+}
