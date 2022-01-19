@@ -1,0 +1,283 @@
+@media only screen and (min-width: 400px) {
+    *{
+        box-sizing: border-box;
+        font-size: 13px;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    body {
+        background-color: hsl(210, 46%, 95%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+
+    .prev-card {
+        display: flex;
+        align-items: center;
+        background-color: white;
+        max-width: 500px;
+        border-radius: 3px;
+        box-shadow: hsl(210, 14%, 95%) 3px 5px 0 0;
+        overflow: hidden;
+    }
+
+    .left {
+        width: 40%
+    }
+
+    .left img { 
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .right {
+        width: 60%;
+        height: 100%;
+        padding: 1rem;
+    }
+
+    .right h1 {
+        font-weight: 700;
+        margin: 0 0 .5em 0;
+    }
+
+    .right p {
+        font-size: 10px;
+        margin: 0 0 .5em 0;
+    }
+
+    .writer {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .writer .name {
+        font-weight: 500;
+        
+    }
+
+    .writer .avatar {
+        width: 50px;
+        border-radius: 50%;
+    }
+
+    .writer span {
+        display: block;
+        font-size: 10px;
+    }
+
+    #share {
+        color: hsl(217, 19%, 35%);
+        background-color: hsl(210, 46%, 95%);
+        height: 25px;
+        object-fit: cover;
+        border: none;
+        border-radius: calc(25px / 2);
+        float: right;
+        margin-left: auto;
+    }
+
+    #share:hover {
+        cursor: pointer;
+    }
+
+    /* ========================== */
+    .share-active {
+        color:  white;
+        background-color: hsl(217, 19%, 35%);
+    }
+
+    .share-active {
+        color:  white;
+        background-color: hsl(217, 19%, 35%);
+    }
+
+    .share-cont {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        background-color: hsl(217, 19%, 35%);
+    }
+
+    .share-cont p{
+        color: white;
+    }
+
+    .share-cont {
+        padding: 1rem
+    }
+
+    .share-cont .link {
+        width: 50px;
+        border-radius: 50%;
+    }
+
+    #share-active {
+        color: hsl(217, 19%, 35%);
+        background-color: hsl(210, 46%, 95%);
+        height: 25px;
+        object-fit: cover;
+        border: none;
+        border-radius: calc(25px / 2);
+        float: right;
+        margin-left: auto;
+    }
+
+    #share-active:hover {
+        cursor: pointer;
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    *{
+        box-sizing: border-box;
+        font-size: 13px;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    body {
+        background-color: hsl(210, 46%, 95%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+
+    .prev-card {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: white;
+        max-width: 500px;
+        border-radius: 3px;
+        box-shadow: hsl(210, 14%, 95%) 3px 5px 0 0;
+        overflow: hidden;
+        padding: 1rem;
+    }
+
+    .left {
+        width: 100%
+    }
+
+    .left img { 
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .right {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .right h1 {
+        font-weight: 700;
+        margin: 0 0 .5em 0;
+    }
+
+    .right p {
+        font-size: 10px;
+        margin: 0 0 .5em 0;
+    }
+
+    .writer {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .writer .name {
+        font-weight: 500;
+        
+    }
+
+    .writer .avatar {
+        width: 50px;
+        border-radius: 50%;
+    }
+
+    .writer span {
+        display: block;
+        font-size: 10px;
+    }
+
+    #share {
+        color: hsl(217, 19%, 35%);
+        background-color: hsl(210, 46%, 95%);
+        height: 25px;
+        object-fit: cover;
+        border: none;
+        border-radius: calc(25px / 2);
+        float: right;
+        margin-left: auto;
+    }
+
+    #share:hover {
+        cursor: pointer;
+    }
+
+    .share-active {
+        color:  white;
+        background-color: hsl(217, 19%, 35%);
+    }
+
+    .share-cont {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        background-color: hsl(217, 19%, 35%);
+    }
+
+    .share-cont p{
+        color: white;
+    }
+
+    .share-cont {
+        padding: 1rem
+    }
+
+    .share-cont .link {
+        width: 50px;
+        border-radius: 50%;
+    }
+
+    #share-active {
+        color: hsl(217, 19%, 35%);
+        background-color: hsl(210, 46%, 95%);
+        height: 25px;
+        object-fit: cover;
+        border: none;
+        border-radius: calc(25px / 2);
+        float: right;
+        margin-left: auto;
+    }
+
+    #share-active:hover {
+        cursor: pointer;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+/*- Desktop: 1440px
+
+## Colors
+
+- Very Dark Grayish Blue: hsl(217, 19%, 35%)
+- Desaturated Dark Blue: hsl(214, 17%, 51%)
+- Grayish Blue: hsl(212, 23%, 69%)
+- Light Grayish Blue: hsl(210, 46%, 95%) */
+
+/* .attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+} */
