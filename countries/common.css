@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Nunito+Sans&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+:root {
+    --text-color: black;
+    --text-color-border: hsla(0, 0%, 61%, 0.795);
+    --very-dark-blue: hsl(200, 15%, 8%);
+    --dark-gray: hsl(0, 0%, 52%);
+    --very-light-gray: hsl(0, 8%, 93%);
+    --white-elements: hsl(0, 0%, 100%);
+    --nation-card-width: 300px;
+    --box-shadox: rgb(184, 181, 181);
+}
+
+body {
+    background-color: var(--very-light-gray);
+    margin: 0;
+    padding: 0;
+}
+
+.max-width {
+    max-width: 1400px;
+    padding: 0 1rem;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:  1rem;
+    background-color: var(--white-elements);
+    border-bottom: 1px solid var(--text-color-border);
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.header p{
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bolder;
+    padding: 1rem 1.5rem;
+}
+
+header button {
+    margin-left: auto;
+    color: var(--text-color);
+}
+
+main {
+    padding: .5rem;
+    color: var(--text-color);
+}
+
+main form {
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.search-label {
+    width: fit-content;
+    display: flex;
+    gap: 1rem;
+    width: 60%;
+    flex: 1 1 100%;
+    max-width: 700px;
+    margin-right: auto;
+}
+
+.search-label button {
+    color: var(--text-color);
+}
+
+.search-label input {
+    width: 100%;
+    max-width: 600px;    
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    border: none;
+    outline: 2px solid var(--dark-gray);
+    background-color: var(--white-elements);
+    color: var(--text-color);
+}
+
+.search-label input::placeholder {
+    color: var(--text-color);
+}
+
+.drop-down-container {
+    background-color: var(--white-elements);
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+}
+
+.menu-options {
+    background-color: var(--white-elements);
+    color: var(--text-color);
+    border: none;
+}
+
+.nations-container{
+    margin-top: 2rem;
+    gap: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nation-card {
+    padding: 0;
+    background-color: var(--white-elements);
+    border-radius: 3px;
+    max-width: var(--nation-card-width);
+    /* box-shadow: 10px 5px 5px var(--box-shadox); */
+    flex: 1 1 20em;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.nation-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; 
+}
+
+.nation-info{
+    margin: 1rem;
+}
+
+.nation-info p{
+    padding: .25rem 0;
+    margin: 0;
+}
+
+.specific-nation-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:  2rem 0;
+    gap: 2em;
+    background-color: var(--white-elements);
+    padding-right: 1em;
+    /*box-shadow: 10px 5px 5px var(--box-shadox); */
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.specific-nation-img{
+    width: 50%;
+}
+
+.specific-nation-img img{
+    width: 100%;
+}
+
+.specific-nation-info{
+    width: calc(50% - 2em) 
+}
+
+.specific-nation-info h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+} 
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.content .left {
+    margin-right: auto;
+    flex: 1 1 25%;
+    min-width: 15ch;
+}
+
+.content .right {
+    flex: 1 1 25%;
+    min-width: 15ch;
+}
+
+span{
+    font-weight: bold;
+}
+
+button {
+    background-color: var(--white-elements);
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 3px;
+    
+}
+
+button:hover {
+    outline: 2px solid var(--very-dark-blue);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 550px) {
+    .specific-nation-card {
+      flex-direction: column;
+      padding: 0;
+    }
+
+    .specific-nation-img{
+        width: fit-content;
+    }
+
+    .specific-nation-info{
+        width: 100%;
+        padding: 0 2rem;
+    }
+  }
+
+.dark-mode {
+    /* --box-shadow: hsl(0, 0%, 0%); */
+    --text-color: rgb(233, 233, 233);
+    --text-color-border: hsla(0, 0%, 61%, 0.795);
+    --very-dark-blue: hsl(200, 15%, 8%);
+    --dark-gray: hsl(0, 0%, 52%);
+    --very-light-gray: hsl(207, 26%, 17%);
+    --white-elements:  hsl(208, 14%, 33%); /* (Dark Mode Text & Light Mode Elements) */
+}
